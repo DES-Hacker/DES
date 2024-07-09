@@ -1,0 +1,31 @@
+
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+local win = DiscordLib:Window("Des Universal")
+DiscordLib:Notification("Notification", "Thanks for using DES!", "Okay!")
+
+--servers
+local serv = win:Server("Main", "")
+local Movement = serv:Channel("Movement")
+local Other = serv:Channel("Other")
+--movement
+Movement:Button("500 Speed", function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 500
+end)
+Movement:Button("Fix Speed", function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+Movement:Button("Fly", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+--Other
+Other:Label("This is not my stuff ↓")
+Other:Label(" ")
+Other:Button("Iny", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+Other:Button("Omen Hub (KEY NEEDED)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mezzopera/Omen-Hub/main/omen_hub.lua"))()
+end)
+Other:Button("Aimbot", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mick-gordon/Hyper-Escape/main/DeleteMobCheatEngine.lua"))()
+end)
